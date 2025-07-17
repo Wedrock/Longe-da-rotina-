@@ -1,38 +1,26 @@
-      * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
+.carrossel {
+    margin-bottom: 40px;
+}
 
-        body {
-            font-family: sans-serif;
-            padding: 20px;
-        }
+.gallery {
+    background: var(--gray-light);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        .gallery {
-            background: #f0f0f0; /* Um fundo mais suave */
-            margin-top: 20px;
-        }
+.gallery-cell {
+    width: 66%;
+    height: 400px;
+    margin-right: 15px;
+    background: #333;
+    border-radius: 8px;
+}
 
-        .gallery-cell {
-            width: 66%; /* Largura de cada slide */
-            height: 400px; /* Altura aumentada para imagens retangulares */
-            margin-right: 15px;
-            background: #333; /* Fundo para o caso da imagem não carregar */
-            border-radius: 8px;
-            /* Remove o contador de número que usamos antes */
-            counter-increment: none; 
-        }
-
-        /* NOVO CSS PARA AS IMAGENS */
-        .gallery-cell img {
-            display: block;
-            width: 100%; /* Imagem ocupa toda a largura da célula */
-            height: 100%; /* Imagem ocupa toda a altura da célula */
-            object-fit: cover; /* ESSENCIAL: Redimensiona a imagem para preencher o espaço sem distorcer. Ela pode ser cortada se a proporção for diferente. */
-            border-radius: 8px; /* Mantém as bordas arredondadas */
-        }
-
-        /* Remove o número que aparecia antes */
-        .gallery-cell:before {
-            display: none;
-        }
+.gallery-cell img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}

@@ -4,132 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acesso para Todos</title>
-    <link rel="shortcut icon" href="image/hosting.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/hosting.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
 
-<header>
-    <div class="header-desktop container flex-row">
-        <nav class="nav-header">
-            <ul class="flex-row">
-                <li><a class="pink-underline" href="index.html">Home</a></li>
-                <li><a class="pink-underline" href="gallery.html">Férias</a></li>
-                <li><a class="pink-underline" href="about.html">Local</a></li>
-            </ul>
-        </nav>
+    
+    <header>
+        <div class="header-desktop container flex-row">
+            <nav class="nav-header">
+                <ul class="flex-row">
+                    <li><a class="pink-underline" href="index.html">Home</a></li>
+                    <li><a class="pink-underline" href="ferias.html">Férias</a></li>
+                    <li><a class="pink-underline" href="lugar.html">Local</a></li>
+                </ul>
+            </nav>
 
-        <figure class="logo-header">
-            <a href="index.html">
-                <img src="image/logo.svg" alt="Logo Home">
-            </a>
-        </figure>
+            <figure class="logo-header">
+                <a href="index.html">
+                    <img src="image/logo.svg" alt="Logotipo Acesso para Todos">
+                </a>
+            </figure>
 
-        <nav class="nav-header flex-row">
-            <ul class="flex-row">
-                <li><a class="pink-underline" href="delivery.html">Família</a></li>
-                <li><a class="pink-underline" href="contact.html">Volta às auals</a></li>
-            </ul>
-        </nav>
-    </div>
+            <nav class="nav-header flex-row">
+                <ul class="flex-row">
+                    <li><a class="pink-underline" href="familia.html">Família</a></li>
+                    <li><a class="pink-underline" href="volta-aula.html">Volta às aulas</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <div class="header-mobile container">
-        <figure class="logo-header-mobile">
-            <a href="index.html">
-                <img src="assets/vectors/logo-horizontal.svg" alt="Logo horizontal da Doce Sereia">
-            </a>
-        </figure>
+        <div class="header-mobile container">
+            <figure class="logo-header-mobile">
+                <a href="index.html">
+                    <img src="image/logo.svg" alt="Logotipo Acesso para Todos, versão mobile">
+                </a>
+            </figure>
 
-        <div class="dropdown">
-            <button class="dropbtn" onclick="toggleDropdown()">
-                <i class="fa fa-bars"></i> </button>
-            <div class="dropdown-content" id="myDropdown">
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Galeria</a>
-                <a href="about.html">Sobre</a>
-                <a href="delivery.html">Delivery</a>
-                <a href="contact.html">Contato</a>
-                <a href="register.html">Seja Doce</a>
+            <div class="dropdown">
+                <button class="dropbtn" aria-label="Abrir menu de navegação" onclick="toggleDropdown()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Férias</a>
+                    <a href="about.html">Local</a>
+                    <a href="delivery.html">Família</a>
+                    <a href="contact.html">Volta às aulas</a>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<section>
-    <div class="gallery js-flickity"
-        data-flickity-options='{ "wrapAround": true, "autoPlay": 2500, "pauseAutoPlayOnHover": true }'>
-        
-        <div class="gallery-cell">
-            <img src="image/programando.jpg" alt="pessoa com computador">
-        </div>
-        <div class="gallery-cell">
-            <img src="image/cinema.jpg" alt="Vale com rio">
-        </div>
-        <div class="gallery-cell">
-            <img src="image/carro.jpeg" alt="Cachorro pug">
-        </div>
-        <div class="gallery-cell">
-            <img src="image/f1.avif" alt="Cachorro preto">
-        </div>
-        <div class="gallery-cell">
-            <img src="image/games.jpeg" alt="Floresta vista de cima">
-        </div>
+    <main>
+        <section class="carrossel">
+            <h2 class="visually-hidden">Galeria de Imagens</h2> <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 2500, "pauseAutoPlayOnHover": true }'>
+                <div class="gallery-cell">
+                    <img src="image/programando.jpg" alt="Pessoa programando em um computador">
+                </div>
+                <div class="gallery-cell">
+                    <img src="image/cinema.jpg" alt="Interior de uma sala de cinema com tela grande">
+                </div>
+                <div class="gallery-cell">
+                    <img src="image/carro.jpeg" alt="Carro em alta velocidade em uma pista de corrida">
+                </div>
+                <div class="gallery-cell">
+                    <img src="image/f1.avif" alt="Carro de Fórmula 1 em uma curva na pista">
+                </div>
+                <div class="gallery-cell">
+                    <img src="image/games.jpeg" alt="Pessoa jogando videogame com um controle">
+                </div>
+            </div>
+        </section>
 
-    </div>
-</section>
-
-<section class="denuncia-container">
-        
-        <div class="denuncia-conteudo">
-            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
-            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
-            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
-        </div>
-        
-        <div class="denuncia-imagem">
-            <img src="image/denuncia.png" alt="Ilustração de mãos segurando um formulário que está sendo carimbado como 'Negado' (Denied).">
-        </div>
-    </section>
- 
+        <section class="main-content container">
+            <h2 class="visually-hidden">Informações de Localização e Notícias</h2> <div class="left-section">
+                <div class="location-box">
+                    <b>Florânia-RN</b>
+                </div>
+                <div class="diatinf-box">
+                    <img class="diatinf-logo" alt="Logo do DIATINF" src="image/diatinf.png">
+                </div>
+            </div>
+            
+            <div class="right-section">
+                <img class="main-image" alt="Ilustração de Rick e Morty" src="image/rick-mory.png">
+            </div>
+        </section>
+    </main>
 
     <footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <img src="image/logo.svg" alt="Logo que representa acessibilidade com uma pessoa em cadeira de rodas" class="footer-logo">
-            <p class="footer-text">Acesso para Todos</p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="image/logo.svg" alt="Logo que representa acessibilidade com uma pessoa em cadeira de rodas" class="footer-logo">
+                <p class="footer-text">Longe da Rotina</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Link para o Facebook">
+                    <img src="image/facebook.svg" alt="Ícone do Facebook">
+                </a>
+                <a href="https://br.linkedin.com/" target="_blank" aria-label="Link para o LinkedIn">
+                    <img src="image/linkedin.svg" alt="Ícone do LinkedIn">
+                </a>
+                <a href="https://x.com/home" target="_blank" aria-label="Link para o X (Twitter)">
+                    <img src="image/X.svg" alt="Ícone do X (antigo Twitter)">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Link para o Instagram">
+                    <img src="image/Instagram.svg" alt="Ícone do Instagram">
+                </a>
+            </div>
         </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Link para o Facebook">
-                <img src="image/facebook.svg" alt="Ícone do Facebook">
-            </a>
-            <a href="https://br.linkedin.com/" target="_blank" aria-label="Link para o LinkedIn">
-                <img src="image/linkedin.svg" alt="Ícone do LinkedIn">
-            </a>
-            <a href="https://x.com/home" target="_blank" aria-label="Link para o X (Twitter)">
-                <img src="image/X.svg" alt="Ícone do X (antigo Twitter)">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Link para o Instagram">
-                <img src="image/Instagram.svg" alt="Ícone do Instagram">
-            </a>
+        <div class="footer-legal">
+            <nav class="footer-nav"> <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="gallery.html">Férias</a></li>
+                    <li><a href="delivery.html">Família</a></li>
+                    <li><a href="contact.html">Volta às aulas</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 João Danjour. Todos os direitos reservados.</p>
         </div>
-    </div>
-    <div class="footer-legal">
-        <ul class="footer-nav">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="#">Artigos</a></li>
-            <li><a href="#">Legislação</a></li>
-            <li><a href="#">Acessibilidade</a></li>
-            <li><a href="#">Notícias</a></li>
-        </ul>
-        <p>&copy; 2024 Acesso para Todos. Todos os direitos reservados.</p>
-    </div>
-</footer>
-
+    </footer>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
+        // Fecha o dropdown se o usuário clicar fora dele
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.fa-bars')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
