@@ -289,3 +289,26 @@ footer a:hover {
         margin-top: 20px;
     }
 }
+
+/* Por padrão (telas grandes), o menu desktop é visível */
+.header-desktop {
+    display: flex;
+}
+
+/* E o menu mobile é escondido */
+.header-mobile {
+    display: none;
+}
+
+/* Quando a tela for menor que 768px... */
+@media (max-width: 768px) {
+    /* O menu desktop é escondido */
+    .header-desktop {
+        display: none;
+    }
+    /* E o menu mobile passa a ser visível */
+    .header-mobile {
+        display: flex;
+    }
+}
+
