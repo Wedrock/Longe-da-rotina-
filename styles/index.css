@@ -1,4 +1,15 @@
-
+:root {
+    --main-pink: #ae81ee;
+    --lighter-pink: #FF8ACD;
+    --main-yellow: #FFD700;
+    --white: #FFFFFF;
+    --main-font: 'Nunito', sans-serif;
+    --main-font-size: 16px;
+    --dark-purple: #230D41;
+    --gray-light: #f0f0f0;
+    --gray-medium: #bdc3c7;
+    --gray-dark: #2c3e50;
+}
 
 * {
     box-sizing: border-box;
@@ -253,19 +264,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-:root {
-    --main-pink: #ae81ee;
-    --lighter-pink: #FF8ACD;
-    --main-yellow: #FFD700;
-    --white: #FFFFFF;
-    --main-font: 'Nunito', sans-serif;
-    --main-font-size: 16px;
-    --dark-purple: #230D41;
-    --gray-light: #f0f0f0;
-    --gray-medium: #bdc3c7;
-    --gray-dark: #2c3e50;
 }
 
 @media (max-width: 768px) {
