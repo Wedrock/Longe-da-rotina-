@@ -7,34 +7,129 @@
     <link rel="shortcut icon" href="image/hosting.ico" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="styles/carrossel.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
 
-<header class="header">
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="image/logo.svg" alt="Logo que representa acessibilidade com uma pessoa em cadeira de rodas" class="logo">
-                <h1 class="site-title">Acesso para Todos</h1>
+<header>
+    <div class="header-desktop container flex-row">
+        <nav class="nav-header">
+            <ul class="flex-row">
+                <li><a class="pink-underline" href="index.html">Home</a></li>
+                <li><a class="pink-underline" href="gallery.html">Férias</a></li>
+                <li><a class="pink-underline" href="about.html">Local</a></li>
+            </ul>
+        </nav>
+
+        <figure class="logo-header">
+            <a href="index.html">
+                <img src="image/logo.svg" alt="Logo Home">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Legislação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Influência</a>
-                    </li>
-                </ul>
+        </figure>
+
+        <nav class="nav-header flex-row">
+            <ul class="flex-row">
+                <li><a class="pink-underline" href="delivery.html">Família</a></li>
+                <li><a class="pink-underline" href="contact.html">Volta às auals</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="header-mobile container">
+        <figure class="logo-header-mobile">
+            <a href="index.html">
+                <img src="assets/vectors/logo-horizontal.svg" alt="Logo horizontal da Doce Sereia">
+            </a>
+        </figure>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">
+                <i class="fa fa-bars"></i> </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Galeria</a>
+                <a href="about.html">Sobre</a>
+                <a href="delivery.html">Delivery</a>
+                <a href="contact.html">Contato</a>
+                <a href="register.html">Seja Doce</a>
             </div>
         </div>
-    </nav>
+    </div>
 </header>
+
+<section>
+    <div class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true, "autoPlay": 2500, "pauseAutoPlayOnHover": true }'>
+        
+        <div class="gallery-cell">
+            <img src="image/programando.jpg" alt="pessoa com computador">
+        </div>
+        <div class="gallery-cell">
+            <img src="image/cinema.jpg" alt="Vale com rio">
+        </div>
+        <div class="gallery-cell">
+            <img src="image/carro.jpeg" alt="Cachorro pug">
+        </div>
+        <div class="gallery-cell">
+            <img src="image/f1.avif" alt="Cachorro preto">
+        </div>
+        <div class="gallery-cell">
+            <img src="image/games.jpeg" alt="Floresta vista de cima">
+        </div>
+
+    </div>
+</section>
+
+<section class="denuncia-container">
+        
+        <div class="denuncia-conteudo">
+            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
+            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
+            <a href="denuncia.html" class="denuncia-botao">Fazer denúncia</a>
+        </div>
+        
+        <div class="denuncia-imagem">
+            <img src="image/denuncia.png" alt="Ilustração de mãos segurando um formulário que está sendo carimbado como 'Negado' (Denied).">
+        </div>
+    </section>
+ 
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="image/logo.svg" alt="Logo que representa acessibilidade com uma pessoa em cadeira de rodas" class="footer-logo">
+            <p class="footer-text">Acesso para Todos</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Link para o Facebook">
+                <img src="image/facebook.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://br.linkedin.com/" target="_blank" aria-label="Link para o LinkedIn">
+                <img src="image/linkedin.svg" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://x.com/home" target="_blank" aria-label="Link para o X (Twitter)">
+                <img src="image/X.svg" alt="Ícone do X (antigo Twitter)">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Link para o Instagram">
+                <img src="image/Instagram.svg" alt="Ícone do Instagram">
+            </a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <ul class="footer-nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Artigos</a></li>
+            <li><a href="#">Legislação</a></li>
+            <li><a href="#">Acessibilidade</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
+        <p>&copy; 2024 Acesso para Todos. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
